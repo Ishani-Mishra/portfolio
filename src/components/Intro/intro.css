@@ -1,0 +1,151 @@
+/* 50% of the component is on the left side and 50% of the component is onthe right side */
+.i{
+    display:flex;
+ /* for full screen*/
+    color: #4E0114;
+}
+.i-left{
+    width: 50%;
+    display: flex;
+}
+.i-right{
+    width: 50%;   
+}
+.i-left-wrapper{
+    padding-left: 50px;
+}
+.i-intro{
+    font-size:30px;
+    font-weight: 300;
+    padding-top: 0px;
+    margin-bottom: 0;
+    flex:1;
+    /* margin-bottom: 0%;
+    padding-bottom: 0%; */
+}
+.i-name{
+    font-size: 60px;
+    margin-top: 0;
+    padding-top: 0;
+    flex:2;
+    /* margin-bottom: 0%;
+    padding-bottom: 0%; */
+}
+.i-title{
+    height:50px;
+    overflow: hidden;
+    flex:1;
+    font-size: 30px;
+    font-weight: bold;
+    color:#C00030;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.i-title-wrapper{
+    height:100%;
+    animation: move 10s ease-in-out infinite alternate;
+}
+@keyframes move{
+    16.67%{
+        transform:translateY(-60px);
+    }
+    33.34%{
+        transform:translateY(-120px);
+    }
+    50.01%{
+        transform:translateY(-180px);
+    }
+    66.68%{
+        transform:translateY(-240px);
+    }
+    83.35%{
+        transform:translateY(-300px);
+    }
+    100%{
+        transform:translateY(-360px);
+    }
+}
+
+
+.i-desc{
+ display:flex;
+ align-items: center;  
+ flex:3; 
+}
+.i-left-wrapper{
+    padding: 50px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.i-img{
+    width:auto;
+    height: 700px;
+    object-fit: cover;
+    position: absolute;
+    float: right;
+    right: 200px;
+    top: 100px;
+    z-index: 999;
+}
+svg{
+    width:auto;
+    height: 680px;
+    object-fit: cover;
+    position: absolute;
+    float: right;
+    right: 0%;
+    z-index: -999;
+}
+@media only screen and (max-width:1100px){
+    .i-img{
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        float:right;
+    }
+  }
+@media only screen and (max-width:800px){
+    .i-img{
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        float:right;
+    }
+  }
+  @media only screen and (max-width: 700px){
+    .i-img{
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        float:right;
+    } 
+  }
+  @media only screen and (max-width: 600px){
+    .i-img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        float:right;
+    } 
+  }
+
+  #socials, #linkedin, #github, #behance, #instagram{
+      animation: social 35s infinite linear;
+      transform-origin: center;
+      transform-box: fill-box;
+  }
+
+  @keyframes social {
+      from{
+          transform: rotateZ(0deg);
+      }
+      to{
+          transform: rotateZ(360deg);
+      }
+  }

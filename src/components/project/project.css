@@ -1,0 +1,14 @@
+.parallax-tilt{
+    height:200px;
+    width: 400px;
+    background-color: #db607f;
+    border-radius: 20px;
+    color:#670019;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+
+
